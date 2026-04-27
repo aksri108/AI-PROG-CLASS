@@ -1,15 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Hello Page</title>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <h1>UP Police Super 250</h1>
-    <p>Hi Majhar, how are you?</p>
-    <hr />
-    Noida is nice city.
+
+    <h2>Feedback Form</h2>
+
+    <form action="#" method="post">
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="rating">Rating:</label><br>
+        <select id="rating" name="rating">
+            <option value="5">Excellent</option>
+            <option value="4">Very Good</option>
+            <option value="3">Good</option>
+            <option value="2">Fair</option>
+            <option value="1">Poor</option>
+        </select><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Submit Feedback">
+
+    </form>
 
 </body>
 
